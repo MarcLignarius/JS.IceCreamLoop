@@ -10,15 +10,36 @@
   <title>Site Title</title>
 </head>
 <body>
-<!-- This section is the header of the site. -->
   <div class="container">
     <div class="jumbotron">
       <h1>Site Heading</h1>
       <p>Site Intro</p>
     </div>
-<!-- This section is... -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- As with the very first section, this section should generally not be edited. -->
+    <div id="renderList">
+    </div>
   </div>
+
 </body>
+<!-- This section is the header of the site. -->
+<!-- This section is... -->
+<script>
+(function(){
+    var ul = document.createElement('ul');
+
+    flavorList = ['Chocolate', 'Vanilla', 'Sherbert'];
+
+    document.getElementById('renderList').appendChild(ul);
+    flavorList.forEach(renderFlavorList);
+
+    function renderFlavorList(element, index, arr) {
+        var li = document.createElement('li');
+        li.setAttribute('class','item');
+
+        ul.appendChild(li);
+
+        li.innerHTML=li.innerHTML + element;
+    }
+})();
+</script>
+<!-- As with the very first section, this section should generally not be edited. -->
 </html>
