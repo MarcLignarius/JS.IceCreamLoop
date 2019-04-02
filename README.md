@@ -1,18 +1,18 @@
-# _{Application Name}_
+# _Arrays and Looping Practice: Ice Cream Flavors_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Populating HTML content using a script, 04/01/2019_
 
 #### By _**Marc Davies**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_My favorite ice cream flavors are stored into an array. I'm looping through this array and inserting the flavors into the HTML file._
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
 * _Open index.html_
-* _Alternatively, launch marclignarius.github.io/projectname_
+* _Alternatively, launch marclignarius.github.io/icecreamloop_
 
 ## Known Bugs
 
