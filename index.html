@@ -7,39 +7,19 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Site Title</title>
+  <title>Arrays and Looping: Ice Cream Flavors</title>
 </head>
 <body>
+<!-- This section is the header of the site. -->
   <div class="container">
     <div class="jumbotron">
-      <h1>Site Heading</h1>
-      <p>Site Intro</p>
+      <h1>Arrays and Looping Practice: Ice Cream Flavors</h1>
+      <p>My favorite ice cream flavors are stored into an array. I'm looping through this array and inserting the flavors into the HTML file.</p>
     </div>
-    <div id="renderList">
+<!-- This section is where our list appears. -->
+    <div id="output">
     </div>
-  </div>
-
-</body>
-<!-- This section is the header of the site. -->
-<!-- This section is... -->
-<script>
-(function(){
-    var ul = document.createElement('ul');
-
-    flavorList = ['Chocolate', 'Vanilla', 'Sherbert'];
-
-    document.getElementById('renderList').appendChild(ul);
-    flavorList.forEach(renderFlavorList);
-
-    function renderFlavorList(element, index, arr) {
-        var li = document.createElement('li');
-        li.setAttribute('class','item');
-
-        ul.appendChild(li);
-
-        li.innerHTML=li.innerHTML + element;
-    }
-})();
-</script>
 <!-- As with the very first section, this section should generally not be edited. -->
+  </div>
+</body>
 </html>
